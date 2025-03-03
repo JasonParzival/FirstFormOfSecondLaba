@@ -38,14 +38,14 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(54, 380);
+            textBox1.Location = new Point(235, 145);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(152, 27);
             textBox1.TabIndex = 0;
             // 
             // button
             // 
-            button.Location = new Point(235, 380);
+            button.Location = new Point(422, 143);
             button.Name = "button";
             button.Size = new Size(94, 29);
             button.TabIndex = 1;
@@ -65,7 +65,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(18, 61);
+            label2.Location = new Point(12, 61);
             label2.Name = "label2";
             label2.Size = new Size(584, 20);
             label2.TabIndex = 3;
@@ -74,7 +74,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(21, 97);
+            label3.Location = new Point(12, 94);
             label3.Name = "label3";
             label3.Size = new Size(475, 20);
             label3.TabIndex = 4;
@@ -83,7 +83,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(55, 344);
+            label4.Location = new Point(12, 148);
             label4.Name = "label4";
             label4.Size = new Size(199, 20);
             label4.TabIndex = 5;
@@ -93,7 +93,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(623, 188);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -102,6 +102,7 @@
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Form1";
+            FormClosed += Form1_FormClosed;
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
