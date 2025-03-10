@@ -101,7 +101,7 @@
             Controls.Add(button);
             Controls.Add(textBox1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Задача по for";
             FormClosed += Form1_FormClosed;
             Load += Form1_Load;
             ResumeLayout(false);

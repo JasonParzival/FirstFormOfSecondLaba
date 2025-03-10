@@ -37,7 +37,7 @@ namespace FirstFormOfSecondLaba
             bool forif = true;
             for (int i = 1; i < smth.Length; i++)
             {
-                if ((int)Char.GetNumericValue(smth[i - 1]) < (int)Char.GetNumericValue(smth[i]))
+                if ((int)Char.GetNumericValue(smth[i - 1]) <  (int)Char.GetNumericValue(smth[i]))
                 {
                     forif = true;
                 }
