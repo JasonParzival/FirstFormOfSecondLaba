@@ -9,11 +9,6 @@ namespace FirstFormOfSecondLaba
             textBox1.Text = Properties.Settings.Default.StringTextBox;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.StringTextBox = textBox1.Text;
@@ -27,6 +22,14 @@ namespace FirstFormOfSecondLaba
         {
             Properties.Settings.Default.StringTextBox = textBox1.Text;
             Properties.Settings.Default.Save();
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button.PerformClick();
+            }
         }
     }
 
