@@ -2,6 +2,10 @@ namespace FirstFormOfSecondLaba
 {
     public partial class Form1 : Form
     {
+        //Установить, является ли последовательность цифр при просмотре
+        //их слева направо упорядоченной по возрастанию. Например,
+        //для последовательности 1,4,7,8 ответ положительный,
+        //для чисел 1,7,8,2 и 1,6,6,8 — отрицательный и т.п
         public Form1()
         {
             InitializeComponent();
@@ -11,9 +15,6 @@ namespace FirstFormOfSecondLaba
 
         private void button_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.StringTextBox = textBox1.Text;
-            Properties.Settings.Default.Save();
-
             string message = Logic.IsDigitMessage(this.textBox1.Text);
             MessageBox.Show(message);
         }
@@ -40,7 +41,7 @@ namespace FirstFormOfSecondLaba
             bool forif = true;
             for (int i = 1; i < smth.Length; i++)
             {
-                if ((int)Char.GetNumericValue(smth[i - 1]) <  (int)Char.GetNumericValue(smth[i]))
+                if ((int)Char.GetNumericValue(smth[i - 1]) < (int)Char.GetNumericValue(smth[i]))
                 {
                     forif = true;
                 }
@@ -59,11 +60,11 @@ namespace FirstFormOfSecondLaba
 
             if (Logic.Check(smth))
             {
-                message = "Последовательность: " + smth + " положительна!";
+                message = "Последовательность цифр: " + smth + " в порядке возрастания!";
             }
             else
             {
-                message = "Последовательность: " + smth + " отрицательна!";
+                message = "Последовательность цифр: " + smth + " в порядке убывания!";
             }
             return message;
         }
